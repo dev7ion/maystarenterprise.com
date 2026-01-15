@@ -14,11 +14,11 @@
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;
 }
 
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
+} */
 
 html {
   scroll-behavior: smooth;
