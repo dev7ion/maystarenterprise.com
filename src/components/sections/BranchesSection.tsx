@@ -58,7 +58,7 @@ export default function BranchesSection() {
         <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-gold/20 rounded-full blur-3xl animate-pulse-slow" />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="container-responsive relative z-10">
         {/* Enhanced Header */}
         <div className="max-w-4xl mx-auto text-center mb-12 lg:mb-16 animate-fade-in">
           <span className="section-subtitle text-gold/90 mb-6 block">Our Locations</span>
@@ -73,11 +73,11 @@ export default function BranchesSection() {
         </div>
 
         {/* Enhanced Tab Navigation */}
-        <div className="flex justify-center mb-12 lg:mb-16">
+        <div className="flex justify-center mb-8 sm:mb-12 lg:mb-16">
           <div className="inline-flex gap-2 p-2 bg-gray-dark/40 backdrop-blur-sm rounded-full border border-gold/20">
             <button
               onClick={() => setActiveRegion('flagship')}
-              className={`px-8 py-3 text-sm font-bold tracking-wider transition-all duration-300 rounded-full ${
+              className={`btn-responsive px-6 sm:px-8 py-2.5 sm:py-3 text-sm font-bold tracking-wider transition-all duration-300 rounded-full ${
                 activeRegion === 'flagship'
                   ? 'bg-gradient-gold text-black shadow-lg shadow-gold/30'
                   : 'text-white/60 hover:text-white hover:bg-white/5'
@@ -87,7 +87,7 @@ export default function BranchesSection() {
             </button>
             <button
               onClick={() => setActiveRegion('franchise')}
-              className={`px-8 py-3 text-sm font-bold tracking-wider transition-all duration-300 rounded-full ${
+              className={`btn-responsive px-6 sm:px-8 py-2.5 sm:py-3 text-sm font-bold tracking-wider transition-all duration-300 rounded-full ${
                 activeRegion === 'franchise'
                   ? 'bg-gradient-gold text-black shadow-lg shadow-gold/30'
                   : 'text-white/60 hover:text-white hover:bg-white/5'
@@ -100,17 +100,17 @@ export default function BranchesSection() {
 
         {/* Flagship Locations - Enhanced */}
         {activeRegion === 'flagship' && (
-          <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
+          <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8 animate-fade-in">
             {flagshipLocations.map((branch, index) => (
               <div
                 key={index}
-                className="card-luxury p-8 lg:p-10 rounded-xl hover-lift animate-scale-in"
+                className="card-luxury card-responsive rounded-xl hover-lift animate-scale-in"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="flex flex-col md:flex-row gap-6">
+                <div className="flex flex-col md:flex-row gap-4 sm:gap-6">
                   {/* Icon/Number Badge */}
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center text-black text-2xl font-bold shadow-lg shadow-gold/30">
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-gold rounded-full flex items-center justify-center text-black text-xl sm:text-2xl font-bold shadow-lg shadow-gold/30">
                       {index + 1}
                     </div>
                   </div>
@@ -118,10 +118,10 @@ export default function BranchesSection() {
                   {/* Content */}
                   <div className="flex-1 space-y-4">
                     <div>
-                      <h3 className="text-2xl lg:text-3xl font-serif font-bold text-white mb-2 group-hover:text-gold transition-colors">
+                      <h3 className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold text-white mb-2 group-hover:text-gold transition-colors">
                         {branch.name}
                       </h3>
-                      <div className="flex items-center gap-2 text-gold text-sm font-medium">
+                      <div className="flex items-center gap-2 text-gold text-xs sm:text-sm font-medium">
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -131,7 +131,7 @@ export default function BranchesSection() {
                     </div>
 
                     <div className="border-l-2 border-gold/30 pl-4">
-                      <p className="text-white/60 text-sm leading-relaxed whitespace-pre-line">
+                      <p className="text-responsive-sm text-white/60 leading-relaxed whitespace-pre-line">
                         {branch.address}
                       </p>
                     </div>
@@ -140,7 +140,7 @@ export default function BranchesSection() {
                       href={branch.mapLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm font-bold group/link"
+                      className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-responsive-sm font-bold group/link"
                     >
                       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -160,11 +160,11 @@ export default function BranchesSection() {
         {/* Franchise Network - Enhanced Grid */}
         {activeRegion === 'franchise' && (
           <div className="max-w-5xl mx-auto animate-fade-in">
-            <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               {franchiseRegions.map((region, index) => (
                 <div 
                   key={index} 
-                  className="card-luxury p-6 lg:p-8 rounded-xl hover-lift animate-scale-in"
+                  className="card-luxury card-responsive rounded-xl hover-lift animate-scale-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex items-center gap-3 mb-6 pb-4 border-b border-gold/20">
@@ -174,7 +174,7 @@ export default function BranchesSection() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-gold">
+                    <h3 className="text-lg sm:text-xl font-serif font-bold text-gold">
                       {region.region}
                     </h3>
                   </div>
@@ -187,7 +187,7 @@ export default function BranchesSection() {
                       >
                         <div className="w-2 h-2 bg-gold/50 rounded-full mt-2 group-hover/item:bg-gold transition-colors flex-shrink-0" />
                         <div className="flex-1">
-                          <div className="font-semibold text-white text-sm mb-1 group-hover/item:text-gold transition-colors">
+                          <div className="font-semibold text-white text-xs sm:text-sm mb-1 group-hover/item:text-gold transition-colors">
                             {branch.name}
                           </div>
                           <div className="text-xs text-white/50 flex items-center gap-1.5">

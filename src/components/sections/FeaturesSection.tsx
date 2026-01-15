@@ -28,7 +28,7 @@ export default function FeaturesSection() {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold/20 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="container-responsive relative z-10">
         {/* Enhanced Header */}
         <div className="max-w-4xl mx-auto text-center mb-16 lg:mb-20 animate-fade-in">
           <span className="section-subtitle text-gold/90 mb-6 block">Culinary Excellence</span>
@@ -47,7 +47,7 @@ export default function FeaturesSection() {
 
         {/* 3 Enhanced Pillars */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {pillars.map((pillar, index) => (
               <div
                 key={index}
@@ -55,7 +55,7 @@ export default function FeaturesSection() {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 {/* Image Container - Equal Size */}
-                <div className="aspect-[3/4] overflow-hidden relative">
+                <div className="aspect-[3/4] overflow-hidden relative responsive-image">
                   <img
                     src={pillar.image}
                     alt={pillar.title}
@@ -72,14 +72,14 @@ export default function FeaturesSection() {
                   <div className="absolute inset-0 bg-gradient-gold opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
                   
                   {/* Content Overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8 transform group-hover:translate-y-0 transition-transform duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 lg:p-8 transform group-hover:translate-y-0 transition-transform duration-300">
                     <div className="mb-3">
-                      <div className="w-12 h-1 bg-gradient-gold rounded-full mb-4 transform origin-left group-hover:scale-x-150 transition-transform duration-500" />
+                      <div className="w-8 sm:w-12 h-1 bg-gradient-gold rounded-full mb-3 sm:mb-4 transform origin-left group-hover:scale-x-150 transition-transform duration-500" />
                       <h3 className="text-3xl lg:text-4xl font-serif font-bold text-white mb-3 group-hover:text-gold transition-colors duration-300">
                         {pillar.title}
                       </h3>
                     </div>
-                    <p className="text-white/80 text-sm lg:text-base leading-relaxed">
+                    <p className="text-responsive-sm text-white/80 leading-relaxed">
                       {pillar.description}
                     </p>
                   </div>
@@ -102,7 +102,7 @@ export default function FeaturesSection() {
             </p>
             <a
               href="#branches"
-              className="group inline-flex items-center gap-3 border-2 border-gold/40 text-gold px-10 py-4 hover:bg-gold hover:text-black hover:border-gold transition-all duration-300 font-bold text-sm tracking-wider uppercase rounded-full"
+              className="btn-responsive group inline-flex items-center gap-3 border-2 border-gold/40 text-gold font-bold hover:bg-gold hover:text-black hover:border-gold transition-all duration-300 tracking-wider uppercase rounded-full"
             >
               <span>Visit Our Restaurants</span>
               <svg 

@@ -17,7 +17,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-20 container mx-auto px-6 lg:px-12 text-center">
-        <div className="max-w-6xl mx-auto space-y-12 md:space-y-16">
+        <div className="max-w-6xl mx-auto space-y-8 sm:space-y-12 md:space-y-16">
           {/* Premium Badge */}
           <div className="opacity-0 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
             <div className="inline-flex items-center gap-3 backdrop-blur-sm bg-white/5 px-6 py-3 border border-gold/20 rounded-full">
@@ -31,7 +31,7 @@ export default function HeroSection() {
 
           {/* Main Title with Enhanced Typography */}
           <div className="opacity-0 animate-fade-in" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-bold text-white tracking-tight leading-[1.05] mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-bold text-white tracking-tight leading-[1.05] mb-4 sm:mb-6">
               May Star
               <span className="block text-gradient-gold mt-2">Enterprise</span>
             </h1>
@@ -57,17 +57,17 @@ export default function HeroSection() {
 
           {/* Enhanced CTA Buttons */}
           <div className="opacity-0 animate-fade-in pt-4" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-5 max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 max-w-2xl mx-auto">
               <a
                 href="#branches"
-                className="group relative bg-gradient-gold text-black px-10 py-4 md:px-12 md:py-5 font-bold text-sm md:text-base hover:shadow-2xl hover:shadow-gold/40 transition-all duration-500 w-full sm:w-auto uppercase tracking-[0.15em] overflow-hidden"
+                className="btn-responsive group relative bg-gradient-gold text-black font-bold hover:shadow-2xl hover:shadow-gold/40 transition-all duration-500 w-full sm:w-auto uppercase tracking-[0.15em] overflow-hidden"
               >
                 <span className="relative z-10">Explore Our Restaurants</span>
                 <div className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
               </a>
               <a
                 href="#about"
-                className="group relative border-2 border-gold/40 text-gold px-10 py-4 md:px-12 md:py-5 font-bold text-sm md:text-base hover:bg-gold hover:text-black hover:border-gold transition-all duration-500 w-full sm:w-auto uppercase tracking-[0.15em] backdrop-blur-sm"
+                className="btn-responsive group relative border-2 border-gold/40 text-gold font-bold hover:bg-gold hover:text-black hover:border-gold transition-all duration-500 w-full sm:w-auto uppercase tracking-[0.15em] backdrop-blur-sm"
               >
                 <span className="relative z-10">Our Brand Story</span>
               </a>
@@ -75,8 +75,8 @@ export default function HeroSection() {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="opacity-0 animate-fade-in pt-12" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
-            <div className="flex flex-col items-center gap-3">
+          <div className="opacity-0 animate-fade-in pt-8 sm:pt-12" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
+            <div className="flex flex-col items-center gap-2 sm:gap-3">
               <span className="text-white/40 text-xs tracking-wider uppercase">Scroll to discover</span>
               <div className="w-6 h-10 border-2 border-gold/30 rounded-full flex items-start justify-center p-1.5 animate-bounce-slow">
                 <div className="w-1.5 h-1.5 bg-gold rounded-full" />
@@ -87,7 +87,7 @@ export default function HeroSection() {
       </div>
 
       {/* Enhanced Bottom Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 md:h-48 bg-gradient-to-t from-black via-black/60 to-transparent z-10" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 sm:h-32 md:h-48 bg-gradient-to-t from-black via-black/60 to-transparent z-10" />
       
       {/* Decorative Side Elements */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-32 bg-gradient-to-b from-transparent via-gold/30 to-transparent opacity-50 hidden lg:block" />

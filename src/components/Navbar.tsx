@@ -33,8 +33,8 @@ export default function Navbar() {
       }`}
     >
       <div className="border-b border-[#D4AF37]/5">
-        <nav className="mx-auto max-w-7xl px-6 lg:px-12">
-          <div className="flex items-center justify-between h-[72px] gap-8">
+        <nav className="container-responsive">
+          <div className="flex items-center justify-between h-[60px] sm:h-[72px] gap-4 sm:gap-8">
             {/* KIRI - Logo */}
             <div className="flex-shrink-0">
               <Link
@@ -57,7 +57,7 @@ export default function Navbar() {
             </div>
 
             {/* TENGAH - Menu Desktop */}
-            <div className="hidden lg:flex items-center gap-10 flex-1 justify-center">
+            <div className="hidden lg:flex items-center gap-6 xl:gap-10 flex-1 justify-center">
               {menuItems.map((item) => {
                 const isExternal = item.href.startsWith('#');
                 if (isExternal) {
@@ -65,7 +65,7 @@ export default function Navbar() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="relative text-white text-[15px] font-medium tracking-wide hover:text-[#D4AF37] transition-all duration-300 group py-2 whitespace-nowrap"
+                      className="relative text-white text-[13px] xl:text-[15px] font-medium tracking-wide hover:text-[#D4AF37] transition-all duration-300 group py-2 whitespace-nowrap"
                     >
                       <span className="relative z-10">{item.name}</span>
                       <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#D4AF37] group-hover:w-full transition-all duration-300 ease-out" />
@@ -76,7 +76,7 @@ export default function Navbar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="relative text-white text-[15px] font-medium tracking-wide hover:text-[#D4AF37] transition-all duration-300 group py-2 whitespace-nowrap"
+                    className="relative text-white text-[13px] xl:text-[15px] font-medium tracking-wide hover:text-[#D4AF37] transition-all duration-300 group py-2 whitespace-nowrap"
                   >
                     <span className="relative z-10">{item.name}</span>
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#D4AF37] group-hover:w-full transition-all duration-300 ease-out" />
@@ -89,7 +89,7 @@ export default function Navbar() {
             <div className="hidden lg:flex flex-shrink-0">
               <Link
                 href="/locations"
-                className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-[#D4AF37] to-[#F4E4C1] text-black text-[14px] font-bold tracking-wide rounded-full hover:shadow-lg hover:shadow-[#D4AF37]/30 hover:scale-105 transition-all duration-300"
+                className="btn-responsive inline-flex items-center justify-center bg-gradient-to-r from-[#D4AF37] to-[#F4E4C1] text-black font-bold tracking-wide rounded-full hover:shadow-lg hover:shadow-[#D4AF37]/30 hover:scale-105 transition-all duration-300"
               >
                 View Locations
               </Link>
@@ -129,7 +129,7 @@ export default function Navbar() {
           isMobileMenuOpen ? 'max-h-[500px] opacity-100 visible' : 'max-h-0 opacity-0 invisible'
         }`}
       >
-        <div className="mx-auto max-w-7xl px-6 py-8 space-y-2 border-t border-[#D4AF37]/10">
+        <div className="container-responsive py-6 sm:py-8 space-y-2 border-t border-[#D4AF37]/10">
           {menuItems.map((item, index) => {
             const isExternal = item.href.startsWith('#');
             if (isExternal) {
@@ -167,7 +167,7 @@ export default function Navbar() {
             <Link
               href="/locations"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-center px-7 py-3.5 bg-gradient-to-r from-[#D4AF37] to-[#F4E4C1] text-black text-[14px] font-bold tracking-wide rounded-full hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all duration-300"
+              className="btn-responsive block text-center bg-gradient-to-r from-[#D4AF37] to-[#F4E4C1] text-black font-bold tracking-wide rounded-full hover:shadow-lg hover:shadow-[#D4AF37]/30 transition-all duration-300"
             >
               View Locations
             </Link>
