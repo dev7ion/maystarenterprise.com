@@ -205,116 +205,163 @@ export default function TrademarkSection() {
           </div>
         </div>
 
-        {/* Enhanced Franchise Network */}
-        <div className="max-w-5xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+        {/* PREMIUM LUXURY Franchise Network */}
+        <div className="max-w-6xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <div className="relative">
-            {/* Outer Glow */}
-            <div className="absolute -inset-4 bg-gradient-to-br from-gold/10 to-transparent rounded-3xl blur-2xl" />
+            {/* Enhanced Outer Glow */}
+            <div className="absolute -inset-6 bg-gradient-to-br from-gold/20 via-gold/10 to-transparent rounded-3xl blur-3xl animate-pulse-slow" />
             
-            {/* Main Container */}
-            <div className="relative backdrop-blur-md bg-gradient-to-br from-white/10 to-white/5 border-2 border-gold/30 rounded-3xl overflow-hidden">
-              {/* Top Decorative Line */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-gold" />
+            {/* Main Luxury Container */}
+            <div className="relative backdrop-blur-lg bg-gradient-to-br from-gray-dark/80 via-black/90 to-gray-dark/80 border-2 border-gold/40 rounded-3xl overflow-hidden shadow-2xl">
+              {/* Premium Top Accent Bar */}
+              <div className="relative h-2 bg-gradient-to-r from-[#B8860B] via-[#FFD700] to-[#B8860B] overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shimmer"></div>
+              </div>
               
-              <div className="p-10 lg:p-12">
-                {/* Header */}
-                <div className="text-center mb-14">
-                  <div className="inline-flex items-center gap-4 mb-6">
-                    <div className="h-px w-16 bg-gradient-to-r from-transparent to-gold/60" />
-                    <div className="relative">
-                      <h3 className="text-3xl lg:text-4xl font-serif font-bold text-white">
-                        Franchise Network
-                      </h3>
-                      <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-gold rounded-full" />
-                    </div>
-                    <div className="h-px w-16 bg-gradient-to-l from-transparent to-gold/60" />
+              {/* Decorative Corner Elements */}
+              <div className="absolute top-2 left-2 w-16 h-16 border-t-2 border-l-2 border-gold/30 rounded-tl-2xl pointer-events-none" />
+              <div className="absolute bottom-2 right-2 w-16 h-16 border-b-2 border-r-2 border-gold/30 rounded-br-2xl pointer-events-none" />
+              
+              <div className="p-12 lg:p-16">
+                {/* Premium Header Section */}
+                <div className="text-center mb-16">
+                  {/* Luxury Badge */}
+                  <div className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-gold/20 via-gold/15 to-gold/20 border border-gold/40 rounded-full mb-8 shadow-lg shadow-gold/20 backdrop-blur-sm">
+                    <span className="text-gold text-xl animate-pulse-slow">✦</span>
+                    <span className="text-gold/90 font-bold text-xs tracking-[0.3em] uppercase">
+                      Licensed Partners
+                    </span>
+                    <span className="text-gold text-xl animate-pulse-slow">✦</span>
+                  </div>
+
+                  {/* Elegant Title */}
+                  <div className="relative inline-block mb-8">
+                    <h3 className="text-4xl lg:text-5xl font-serif font-bold text-white relative z-10">
+                      Franchise Network
+                    </h3>
+                    <div className="absolute -bottom-3 left-0 right-0 h-1.5 bg-gradient-gold rounded-full blur-sm" />
+                    <div className="absolute -bottom-3 left-0 right-0 h-1 bg-gradient-gold rounded-full" />
                   </div>
                   
-                  <p className="text-responsive-sm text-white/70 max-w-2xl mx-auto leading-relaxed">
-                    All other May Star branches operate under license, bringing the celebrated May Star experience to cities throughout Indonesia
+                  {/* Description with Decorative Lines */}
+                  <div className="flex items-center justify-center gap-6 mb-8">
+                    <div className="h-px w-20 bg-gradient-to-r from-transparent via-gold/60 to-gold" />
+                    <div className="w-2 h-2 bg-gradient-gold rounded-full shadow-lg shadow-gold/50" />
+                    <div className="h-px w-20 bg-gradient-to-l from-transparent via-gold/60 to-gold" />
+                  </div>
+                  
+                  <p className="text-base text-white/70 max-w-3xl mx-auto leading-relaxed font-light">
+                    All other May Star branches operate under license, bringing the celebrated May Star experience to cities throughout Indonesia with the same commitment to excellence
                   </p>
                 </div>
 
-                {/* Locations Grid */}
-                <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Premium Locations Grid */}
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10 mb-12">
                   {Object.entries(franchiseLocations).map(([region, locations], regionIdx) => (
                     <div
                       key={regionIdx}
-                      className="group/region space-y-5"
+                      className="group/region relative"
                     >
-                      {/* Region Header */}
-                      <div className="flex items-center gap-4 pb-4 border-b-2 border-gold/30 group-hover/region:border-gold/60 transition-colors duration-300">
-                        <div className="w-12 h-12 bg-gradient-to-br from-gold/20 to-gold/5 rounded-xl flex items-center justify-center border border-gold/30 group-hover/region:scale-110 group-hover/region:border-gold/50 transition-all duration-300">
-                          <svg className="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={regionIcons[region]} />
-                          </svg>
-                        </div>
-                        <div className="flex-1">
-                          <h4 className="text-gold text-sm font-bold tracking-[0.15em] uppercase">
-                            {region}
-                          </h4>
-                          <div className="h-0.5 w-12 bg-gradient-gold rounded-full mt-1.5 group-hover/region:w-24 transition-all duration-500" />
-                        </div>
-                        <div className="text-gold/60 text-xs font-bold bg-gold/10 px-3 py-1 rounded-full">
-                          {locations.length} {locations.length === 1 ? 'Location' : 'Locations'}
-                        </div>
-                      </div>
+                      {/* Card Glow Effect */}
+                      <div className="absolute -inset-2 bg-gradient-to-br from-gold/10 to-transparent rounded-2xl opacity-0 group-hover/region:opacity-100 blur-xl transition-opacity duration-500" />
                       
-                      {/* Locations List */}
-                      <ul className="space-y-3.5">
-                        {locations.map((location, idx) => (
-                          <li
-                            key={idx}
-                            className="group/item"
-                            onMouseEnter={() => setHoveredLocation(location)}
-                            onMouseLeave={() => setHoveredLocation(null)}
-                          >
-                            <div className={`flex items-start gap-4 p-4 rounded-xl transition-all duration-300 ${hoveredLocation === location ? 'bg-white/10 border border-gold/30' : 'bg-white/5 border border-transparent'}`}>
-                              <div className={`flex-shrink-0 w-2 h-2 rounded-full mt-2 transition-all duration-300 ${hoveredLocation === location ? 'bg-gradient-gold shadow-lg shadow-gold/50 scale-125' : 'bg-gold/50'}`} />
-                              <div className="flex-1">
-                                <span className={`text-sm transition-colors duration-300 ${hoveredLocation === location ? 'text-white font-medium' : 'text-white/70'}`}>
-                                  {location}
-                                </span>
-                              </div>
-                              <svg 
-                                className={`w-4 h-4 text-gold transform transition-all duration-300 ${hoveredLocation === location ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}
-                                fill="none" 
-                                viewBox="0 0 24 24" 
-                                stroke="currentColor"
-                              >
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      {/* Card Container */}
+                      <div className="relative bg-gradient-to-br from-white/5 to-white/[0.02] border-2 border-gold/20 group-hover/region:border-gold/40 rounded-2xl overflow-hidden transition-all duration-500 shadow-xl">
+                        {/* Top Accent */}
+                        <div className="h-1 bg-gradient-to-r from-gold/50 via-gold to-gold/50" />
+                        
+                        <div className="p-8">
+                          {/* Premium Region Header */}
+                          <div className="flex items-center gap-5 mb-8 pb-6 border-b-2 border-gold/20 group-hover/region:border-gold/40 transition-colors duration-300">
+                            <div className="w-16 h-16 bg-gradient-to-br from-gold/30 to-gold/10 rounded-2xl flex items-center justify-center border-2 border-gold/40 group-hover/region:scale-110 group-hover/region:rotate-3 transition-all duration-500 shadow-lg shadow-gold/20">
+                              <svg className="w-8 h-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={regionIcons[region]} />
                               </svg>
                             </div>
-                          </li>
-                        ))}
-                      </ul>
+                            <div className="flex-1">
+                              <h4 className="text-gold text-base font-bold tracking-[0.2em] uppercase mb-2 group-hover/region:text-[#FFD700] transition-colors">
+                                {region}
+                              </h4>
+                              <div className="flex items-center gap-3">
+                                <div className="h-1 w-16 bg-gradient-gold rounded-full group-hover/region:w-28 transition-all duration-500" />
+                                <span className="text-xs text-gold/60 font-semibold">
+                                  {locations.length} {locations.length === 1 ? 'Location' : 'Locations'}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          {/* Luxurious Locations List */}
+                          <ul className="space-y-4">
+                            {locations.map((location, idx) => (
+                              <li
+                                key={idx}
+                                className="group/item"
+                                onMouseEnter={() => setHoveredLocation(location)}
+                                onMouseLeave={() => setHoveredLocation(null)}
+                              >
+                                <div className={`relative flex items-start gap-4 p-5 rounded-xl transition-all duration-300 ${hoveredLocation === location ? 'bg-white/10 border-2 border-gold/40 shadow-lg shadow-gold/10' : 'bg-white/5 border border-gold/20 hover:border-gold/30'}`}>
+                                  {/* Decorative Icon */}
+                                  <div className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 ${hoveredLocation === location ? 'bg-gradient-gold text-black scale-110 shadow-lg shadow-gold/50' : 'bg-gold/20 text-gold border border-gold/30'}`}>
+                                    <span className="text-sm font-bold">✦</span>
+                                  </div>
+                                  
+                                  {/* Location Text */}
+                                  <div className="flex-1 min-w-0">
+                                    <span className={`text-sm leading-relaxed block transition-colors duration-300 ${hoveredLocation === location ? 'text-white font-semibold' : 'text-white/70'}`}>
+                                      {location}
+                                    </span>
+                                  </div>
+                                  
+                                  {/* Arrow Icon */}
+                                  <svg
+                                    className={`flex-shrink-0 w-5 h-5 text-gold transform transition-all duration-300 ${hoveredLocation === location ? 'translate-x-0 opacity-100 scale-110' : '-translate-x-2 opacity-0'}`}
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                  >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                  </svg>
+                                </div>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   ))}
                 </div>
 
-                {/* Footer Stats */}
-                <div className="mt-12 pt-8 border-t border-gold/20">
-                  <div className="grid grid-cols-3 gap-6">
-                    <div className="text-center group/stat cursor-pointer">
-                      <div className="text-4xl font-serif font-bold text-gradient-gold mb-2 group-hover/stat:scale-110 transition-transform">
-                        10+
+                {/* Premium Footer Stats */}
+                <div className="relative mt-16 pt-10 border-t-2 border-gold/20">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <div className="w-16 h-1 bg-gradient-gold rounded-full shadow-lg shadow-gold/50" />
+                  </div>
+                  
+                  <div className="grid grid-cols-3 gap-8">
+                    {[
+                      { value: '8', label: 'Franchise Locations' },
+                      { value: '4', label: 'Regions' },
+                      { value: '100%', label: 'Quality Standards' }
+                    ].map((stat, idx) => (
+                      <div key={idx} className="text-center group/stat cursor-pointer">
+                        <div className="relative inline-block mb-4">
+                          <div className="absolute -inset-2 bg-gradient-gold/20 rounded-xl opacity-0 group-hover/stat:opacity-100 blur-lg transition-opacity duration-300" />
+                          <div className="relative text-5xl lg:text-6xl font-serif font-bold text-gradient-gold group-hover/stat:scale-110 transition-transform duration-300">
+                            {stat.value}
+                          </div>
+                        </div>
+                        <div className="text-white/60 text-xs uppercase tracking-[0.15em] font-semibold">{stat.label}</div>
+                        <div className="h-1 w-12 bg-gradient-gold/50 rounded-full mx-auto mt-3 group-hover/stat:w-20 transition-all duration-300" />
                       </div>
-                      <div className="text-white/60 text-xs uppercase tracking-wider">Total Locations</div>
-                    </div>
-                    <div className="text-center group/stat cursor-pointer">
-                      <div className="text-4xl font-serif font-bold text-gradient-gold mb-2 group-hover/stat:scale-110 transition-transform">
-                        4
-                      </div>
-                      <div className="text-white/60 text-xs uppercase tracking-wider">Regions</div>
-                    </div>
-                    <div className="text-center group/stat cursor-pointer">
-                      <div className="text-4xl font-serif font-bold text-gradient-gold mb-2 group-hover/stat:scale-110 transition-transform">
-                        100%
-                      </div>
-                      <div className="text-white/60 text-xs uppercase tracking-wider">Quality</div>
-                    </div>
+                    ))}
                   </div>
                 </div>
+              </div>
+
+              {/* Bottom Accent Bar */}
+              <div className="relative h-1.5 bg-gradient-to-r from-[#B8860B] via-[#FFD700] to-[#B8860B] overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer"></div>
               </div>
             </div>
           </div>
