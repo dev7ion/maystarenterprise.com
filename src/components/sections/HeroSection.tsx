@@ -23,102 +23,32 @@ export default function HeroSection() {
           className="absolute inset-0"
           style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/70 to-black z-10" />
+          {/* Simple Black Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/90 z-10" />
+          
           <img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2400"
+            src="/home.JPG"
             alt="May Star Restaurant"
             className="w-full h-full object-cover opacity-40 scale-110 animate-slow-zoom"
           />
-        </div>
-        
-        {/* Red Chinese Accent - Subtle */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(139,0,0,0.15)_0%,_transparent_50%)] z-10" />
-        
-        {/* Animated Gradient Overlays - More Subtle */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_#D4AF37_0%,_transparent_40%)] opacity-5 animate-pulse-slow z-10" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_#D4AF37_0%,_transparent_40%)] opacity-5 animate-pulse-slow z-10" style={{ animationDelay: '1s' }} />
-        
-        {/* Floating Gold Particles - Reduced */}
-        <div className="absolute inset-0 z-10">
-          {[...Array(12)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-0.5 h-0.5 bg-gold rounded-full opacity-0 animate-shimmer"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 6}s`,
-                animationDuration: `${4 + Math.random() * 4}s`,
-              }}
-            />
-          ))}
-        </div>
-
-        {/* Chinese Pattern Overlay */}
-        <div className="absolute inset-0 z-10 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23D4AF37\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-            backgroundSize: '60px 60px'
-          }} />
         </div>
       </div>
 
       {/* Content */}
       <div className="relative z-20 container mx-auto px-6 lg:px-12 text-center">
         <div className="max-w-6xl mx-auto space-y-8 sm:space-y-10 md:space-y-12">
-          
-          {/* Chinese Decorative Element Top */}
-          <div className="opacity-0 animate-fade-in" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-            <div className="flex items-center justify-center gap-4 mb-4">
-              {/* Chinese Cloud Motif */}
-              <svg className="w-12 h-8 text-gold/40" viewBox="0 0 48 32" fill="currentColor">
-                <path d="M24 16c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm-12 8c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm24 0c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z"/>
-              </svg>
-            </div>
-          </div>
-
-          {/* Enhanced Premium Badge with Pulse Effect */}
-          <div className="opacity-0 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-            <div className="inline-flex items-center gap-3 backdrop-blur-md bg-gradient-to-r from-red-950/20 via-black/40 to-red-950/20 px-8 py-4 border border-gold/30 rounded-full shadow-2xl relative">
-              {/* Pulse Ring */}
-              <div className="absolute inset-0 border-2 border-gold/30 rounded-full animate-ping-slow" />
-              
-              {/* Chinese Knot Icon Left */}
-              <svg className="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L8 6h3v4H7V7L3 11l4 4v-3h4v4H8l4 4 4-4h-3v-4h4v3l4-4-4-4v3h-4V6h3l-4-4z"/>
-              </svg>
-              
-              <span className="text-gold font-semibold tracking-[0.3em] text-sm md:text-base uppercase">
-                Est. 2007 • Premium Quality
-              </span>
-              
-              {/* Chinese Knot Icon Right */}
-              <svg className="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L8 6h3v4H7V7L3 11l4 4v-3h4v4H8l4 4 4-4h-3v-4h4v3l4-4-4-4v3h-4V6h3l-4-4z"/>
-              </svg>
-            </div>
-          </div>
 
           {/* Main Title with Enhanced Effects */}
-          <div className="opacity-0 animate-fade-in" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-            {/* Decorative Top Border - Chinese Style */}
-            <div className="flex items-center justify-center gap-4 mb-8">
-              <div className="h-px w-20 md:w-32 bg-gradient-to-r from-transparent via-gold to-gold" />
-              <svg className="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="currentColor">
-                <circle cx="12" cy="12" r="4"/>
-                <path d="M12 2v4m0 12v4M2 12h4m12 0h4"/>
-              </svg>
-              <div className="h-px w-20 md:w-32 bg-gradient-to-l from-transparent via-gold to-gold" />
-            </div>
+          <div className="pt-20 sm:pt-24 md:pt-32">
 
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-bold tracking-tight leading-[1.05] relative">
-              <span className="relative inline-block">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold tracking-tight leading-[1.05] relative">
+              <span className="relative inline-block opacity-0 animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
                 <span className="text-white drop-shadow-2xl">May Star</span>
                 {/* Subtle glow effect */}
                 <span className="absolute inset-0 text-white opacity-30 blur-lg">May Star</span>
               </span>
               
-              <span className="block mt-3 relative">
+              <span className="block mt-3 relative opacity-0 animate-fade-in-up" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
                 <span className="text-gradient-gold drop-shadow-2xl animate-text-glow">Enterprise</span>
                 {/* Reflection effect */}
                 <span className="absolute inset-0 text-gradient-gold opacity-20 blur-md transform translate-y-1">Enterprise</span>
@@ -263,16 +193,6 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-
-          {/* Chinese Decorative Element Bottom */}
-          <div className="opacity-0 animate-fade-in pt-4" style={{ animationDelay: '1.1s', animationFillMode: 'forwards' }}>
-            <div className="flex items-center justify-center gap-4">
-              {/* Chinese Cloud Motif */}
-              <svg className="w-12 h-8 text-gold/40" viewBox="0 0 48 32" fill="currentColor">
-                <path d="M24 16c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm-12 8c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm24 0c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z"/>
-              </svg>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -293,9 +213,7 @@ export default function HeroSection() {
         </svg>
       </div>
       
-      {/* Ambient Light Effects - More Subtle */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-red-900/10 rounded-full blur-3xl animate-pulse-slow pointer-events-none" />
-      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-gold/3 rounded-full blur-3xl animate-pulse-slow pointer-events-none" style={{ animationDelay: '2s' }} />
+
     </section>
   );
 }
