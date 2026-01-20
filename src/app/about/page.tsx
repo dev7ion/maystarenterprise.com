@@ -166,16 +166,19 @@ export default function AboutPage() {
               </div>
             </div>
             
-            <div className="relative bg-gradient-to-br from-neutral-900/70 via-neutral-800/40 to-transparent border-2 border-[#D4AF37]/20 rounded-[2.5rem] p-10 md:p-16 shadow-xl overflow-hidden">
-              <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-radial from-[#D4AF37]/10 to-transparent blur-3xl" />
+            <div className="relative bg-gradient-to-br from-[#F4E4C1]/5 via-[#D4AF37]/5 to-white/5 backdrop-blur-sm border-2 border-[#D4AF37]/30 rounded-[2.5rem] p-10 md:p-16 shadow-2xl shadow-[#D4AF37]/20 overflow-hidden">
+              {/* Decorative elements with golden glow */}
+              <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-radial from-[#D4AF37]/20 via-[#F4E4C1]/10 to-transparent blur-3xl" />
+              <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-radial from-[#D4AF37]/15 via-[#F4E4C1]/8 to-transparent blur-3xl" />
+              <div className="absolute inset-0 bg-[linear-gradient(rgba(212,175,55,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(212,175,55,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
               
               <div className="relative z-10">
-                <p className="text-xl md:text-2xl text-neutral-200 leading-relaxed mb-8 font-light">
+                <p className="text-xl md:text-2xl text-neutral-100 leading-relaxed mb-8 font-light">
                   At the heart of May Star lies a deep respect for <span className="text-[#D4AF37] font-semibold">Cantonese culinary traditions</span>. Each dish is crafted with precision, using carefully selected ingredients and time-honored techniques, while embracing contemporary presentation and dining comfort.
                 </p>
-                <div className="p-8 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border-l-4 border-[#D4AF37] rounded-r-2xl">
+                <div className="p-8 bg-gradient-to-r from-[#D4AF37]/15 via-[#D4AF37]/8 to-transparent border-l-4 border-[#D4AF37] rounded-r-2xl backdrop-blur-sm">
                   <p className="text-lg md:text-xl text-white leading-relaxed italic">
-                    This balance between tradition and modernity defines the May Star experience — <span className="font-semibold not-italic">refined yet approachable, luxurious yet welcoming</span>.
+                    This balance between tradition and modernity defines the May Star experience — <span className="font-semibold not-italic text-[#F4E4C1]">refined yet approachable, luxurious yet welcoming</span>.
                   </p>
                 </div>
               </div>
