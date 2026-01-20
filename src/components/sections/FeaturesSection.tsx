@@ -101,7 +101,7 @@ export default function FeaturesSection() {
               Experience the finest Cantonese cuisine at any of our locations
             </p>
             <a
-              href="#branches"
+              href="/locations"
               className="btn-responsive group inline-flex items-center gap-3 border-2 border-gold/40 text-gold font-bold hover:bg-gold hover:text-black hover:border-gold transition-all duration-300 tracking-wider uppercase rounded-full"
             >
               <span>Visit Our Restaurants</span>

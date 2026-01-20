@@ -2,11 +2,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Our Brands', href: '#trademark' },
-    { name: 'Branches', href: '#branches' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Our Heritage', href: '/our-heritage' },
+    { name: 'Locations', href: '/locations' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const flagshipLocations = [

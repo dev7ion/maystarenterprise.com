@@ -508,7 +508,7 @@ export default function AboutPage() {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
-              href="/#branches"
+              href="/locations"
               className="group inline-flex items-center justify-center px-12 py-5 bg-gradient-to-r from-[#D4AF37] to-[#F4E4C1] text-black text-base font-bold tracking-wide rounded-full hover:shadow-2xl hover:shadow-[#D4AF37]/50 hover:scale-105 transition-all duration-300"
             >
               Find a Location
@@ -517,7 +517,7 @@ export default function AboutPage() {
               </svg>
             </Link>
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center px-12 py-5 bg-white/5 backdrop-blur-sm border-2 border-[#D4AF37]/50 text-white text-base font-bold tracking-wide rounded-full hover:bg-[#D4AF37]/10 hover:border-[#D4AF37] hover:scale-105 transition-all duration-300"
             >
               Contact Us

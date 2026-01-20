@@ -111,7 +111,7 @@ export default function HeroSection() {
           <div className="opacity-0 animate-fade-in pt-6" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 max-w-2xl mx-auto">
               <a
-                href="#branches"
+                href="/about"
                 className="group relative bg-gradient-gold text-black font-bold hover:shadow-2xl hover:shadow-gold/50 transition-all duration-500 w-full sm:w-auto uppercase tracking-[0.15em] overflow-hidden px-8 py-4 rounded-full text-sm md:text-base"
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
