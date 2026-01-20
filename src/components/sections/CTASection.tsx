@@ -1,21 +1,43 @@
 export default function CTASection() {
   return (
-    <section className="section-padding bg-black relative overflow-hidden">
-      {/* Enhanced Background with Animation */}
-      <div className="absolute inset-0 opacity-10">
+    <section className="section-padding relative overflow-hidden">
+      {/* Elegant Dark Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D] via-[#151515] to-[#0A0A0A]" />
+      
+      {/* Enhanced Background with Subtle Effect */}
+      <div className="absolute inset-0 opacity-15">
         <img
           src="https://images.unsplash.com/photo-1542528180-4a4c16d6dd12?q=80&w=2000"
           alt="May Star Restaurant"
           className="w-full h-full object-cover scale-105 animate-slow-zoom"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/95 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/85 to-black/90" />
       </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/30 rounded-full blur-3xl animate-pulse-slow" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold/30 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
+      {/* Golden Glow Elements */}
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-gold/30 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-gold/25 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gold/20 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }} />
       </div>
+
+      {/* Golden Border Lines - Top */}
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+      <div className="absolute top-[2px] left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
+      
+      {/* Golden Border Lines - Bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+      <div className="absolute bottom-[2px] left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
+
+      {/* Decorative Corner Elements */}
+      <div className="absolute top-0 left-0 w-32 h-32 border-t-2 border-l-2 border-gold/30" />
+      <div className="absolute top-0 right-0 w-32 h-32 border-t-2 border-r-2 border-gold/30" />
+      <div className="absolute bottom-0 left-0 w-32 h-32 border-b-2 border-l-2 border-gold/30" />
+      <div className="absolute bottom-0 right-0 w-32 h-32 border-b-2 border-r-2 border-gold/30" />
+
+      {/* Vertical Golden Accent Lines */}
+      <div className="absolute top-0 bottom-0 left-[20%] w-[1px] bg-gradient-to-b from-transparent via-gold/10 to-transparent" />
+      <div className="absolute top-0 bottom-0 right-[20%] w-[1px] bg-gradient-to-b from-transparent via-gold/10 to-transparent" />
 
       <div className="container-responsive relative z-10">
         <div className="max-w-5xl mx-auto">
