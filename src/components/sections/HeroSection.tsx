@@ -27,7 +27,7 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/90 z-10" />
           
           <img
-            src="/home.JPG"
+            src="/home.jpg"
             alt="May Star Restaurant"
             className="w-full h-full object-cover opacity-40 scale-110 animate-slow-zoom"
           />
