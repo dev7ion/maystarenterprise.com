@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     "Authentic Chinese Food"
   ],
   authors: [{ name: "May Star Enterprise" }],
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   openGraph: {
     title: "May Star Enterprise - Premier Authentic Chinese Cuisine",
     description: "Experience authentic Cantonese excellence with premium dim sum, live seafood, and Chinese BBQ since 2007.",
@@ -37,6 +36,12 @@ export const metadata: Metadata = {
     locale: "id_ID",
     siteName: "May Star Enterprise",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
