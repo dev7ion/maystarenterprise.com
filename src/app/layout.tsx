@@ -29,6 +29,13 @@ export const metadata: Metadata = {
     "Authentic Chinese Food"
   ],
   authors: [{ name: "May Star Enterprise" }],
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: "May Star Enterprise - Premier Authentic Chinese Cuisine",
     description: "Experience authentic Cantonese excellence with premium dim sum, live seafood, and Chinese BBQ since 2007.",
