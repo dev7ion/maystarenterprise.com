@@ -442,15 +442,13 @@ export default function OurHeritagePage() {
             </div>
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-              <div className="relative aspect-square bg-gradient-to-br from-zinc-900 via-zinc-800 to-yellow-900/20 rounded-2xl border border-yellow-900/30 flex items-center justify-center p-8 shadow-xl overflow-hidden">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(202,138,4,0.1),transparent_70%)]"></div>
-                <div className="text-center relative z-10">
-                  <svg className="w-24 h-24 mx-auto mb-6 text-yellow-500 filter drop-shadow-2xl transform group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                  </svg>
-                  <p className="text-3xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent mb-3">Authentic Cantonese</p>
-                  <p className="text-lg text-gray-400">Time-Honored Recipes</p>
-                </div>
+              <div className="relative aspect-square rounded-2xl border border-yellow-900/30 shadow-xl overflow-hidden">
+                <img
+                  src="/our-heritage-1.png"
+                  alt="The Foundation of Our Cuisine"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-transparent"></div>
                 <div className="absolute top-4 right-4 w-16 h-16 border-t-2 border-r-2 border-yellow-600/30 rounded-tr-2xl"></div>
                 <div className="absolute bottom-4 left-4 w-16 h-16 border-b-2 border-l-2 border-yellow-600/30 rounded-bl-2xl"></div>
               </div>
@@ -468,15 +466,13 @@ export default function OurHeritagePage() {
           <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 md:order-1 relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-              <div className="relative aspect-square bg-gradient-to-br from-zinc-900 via-zinc-800 to-yellow-900/20 rounded-2xl border border-yellow-900/30 flex items-center justify-center p-8 shadow-xl overflow-hidden">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(202,138,4,0.1),transparent_70%)]"></div>
-                <div className="text-center relative z-10">
-                  <svg className="w-24 h-24 mx-auto mb-6 text-yellow-500 filter drop-shadow-2xl transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                  </svg>
-                  <p className="text-3xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent mb-3">Premium Quality</p>
-                  <p className="text-lg text-gray-400">Consistent Excellence</p>
-                </div>
+              <div className="relative aspect-square rounded-2xl border border-yellow-900/30 shadow-xl overflow-hidden">
+                <img
+                  src="/our-heritage-2.png"
+                  alt="A Commitment to Quality and Consistency"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4 w-16 h-16 border-t-2 border-l-2 border-yellow-600/30 rounded-tl-2xl"></div>
                 <div className="absolute bottom-4 right-4 w-16 h-16 border-b-2 border-r-2 border-yellow-600/30 rounded-br-2xl"></div>
               </div>
