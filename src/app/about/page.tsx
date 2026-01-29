@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/ui/Footer';
@@ -100,7 +101,7 @@ export default function AboutPage() {
       {/* Main Content */}
       <section className="relative py-24">
         <div className="max-w-7xl mx-auto px-6">
-          {/* Introduction */}
+          {/* Introduction with Image */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -109,26 +110,40 @@ export default function AboutPage() {
             transition={{ duration: 0.7 }}
             className="mb-32"
           >
-            <div className="relative bg-gradient-to-br from-neutral-900/95 via-neutral-800/80 to-neutral-900/95 backdrop-blur-xl border border-[#D4AF37]/30 rounded-[2.5rem] p-12 md:p-20 shadow-2xl shadow-[#D4AF37]/10 overflow-hidden">
-              {/* Decorative elements */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl" />
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl" />
-              
-              <div className="relative z-10">
-                <div className="inline-block mb-8">
-                  <span className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase">Est. 2007</span>
-                  <div className="h-0.5 bg-gradient-to-r from-[#D4AF37] to-transparent mt-2" />
-                </div>
+            <div className="grid lg:grid-cols-12 gap-8 items-center">
+              {/* Image */}
+              <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl shadow-[#D4AF37]/20 h-full min-h-[400px] lg:min-h-[600px] order-2 lg:order-1 lg:col-span-4">
+                <Image
+                  src="/maystararthagading/4.jpg"
+                  alt="May Star Restaurant Interior"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+
+              {/* Text Content */}
+              <div className="relative bg-gradient-to-br from-neutral-900/95 via-neutral-800/80 to-neutral-900/95 backdrop-blur-xl border border-[#D4AF37]/30 rounded-[2.5rem] p-12 md:p-16 shadow-2xl shadow-[#D4AF37]/10 overflow-hidden order-1 lg:order-2 lg:col-span-8">
+                {/* Decorative elements */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl" />
+                <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#D4AF37]/5 rounded-full blur-3xl" />
                 
-                <p className="text-xl md:text-2xl text-neutral-100 leading-relaxed mb-8 font-light">
-                  Established in <span className="text-[#D4AF37] font-semibold">2007</span>, May Star Restaurant is a premier culinary destination in Indonesia, renowned for its authentic Chinese cuisine and unwavering commitment to quality.
-                </p>
-                <p className="text-lg md:text-xl text-neutral-300 leading-relaxed mb-8">
-                  Rooted in traditional Cantonese heritage and elevated through modern dining concepts, May Star has grown into a respected name synonymous with <span className="text-white font-medium">Premium Dim Sum</span>, <span className="text-white font-medium">Live Seafood</span>, and <span className="text-white font-medium">Chinese BBQ</span>.
-                </p>
-                <p className="text-lg md:text-xl text-neutral-300 leading-relaxed">
-                  From intimate family gatherings to grand-scale banquets, every May Star restaurant is designed to deliver a consistent dining experience that balances refined elegance with warm, professional service.
-                </p>
+                <div className="relative z-10">
+                  <div className="inline-block mb-8">
+                    <span className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase">Est. 2007</span>
+                    <div className="h-0.5 bg-gradient-to-r from-[#D4AF37] to-transparent mt-2" />
+                  </div>
+                  
+                  <p className="text-xl md:text-2xl text-neutral-100 leading-relaxed mb-8 font-light">
+                    Established in <span className="text-[#D4AF37] font-semibold">2007</span>, May Star Restaurant is a premier culinary destination in Indonesia, renowned for its authentic Chinese cuisine and unwavering commitment to quality.
+                  </p>
+                  <p className="text-lg md:text-xl text-neutral-300 leading-relaxed mb-8">
+                    Rooted in traditional Cantonese heritage and elevated through modern dining concepts, May Star has grown into a respected name synonymous with <span className="text-white font-medium">Premium Dim Sum</span>, <span className="text-white font-medium">Live Seafood</span>, and <span className="text-white font-medium">Chinese BBQ</span>.
+                  </p>
+                  <p className="text-lg md:text-xl text-neutral-300 leading-relaxed">
+                    From intimate family gatherings to grand-scale banquets, every May Star restaurant is designed to deliver a consistent dining experience that balances refined elegance with warm, professional service.
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -340,56 +355,115 @@ export default function AboutPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <motion.div variants={fadeInUp} className="group">
-                <div className="relative bg-gradient-to-br from-neutral-900/90 via-neutral-800/80 to-neutral-900/90 border-2 border-[#D4AF37]/20 rounded-[2rem] p-10 h-full hover:border-[#D4AF37]/60 transition-all duration-500 hover:shadow-2xl hover:shadow-[#D4AF37]/30 hover:-translate-y-3 overflow-hidden">
-                  <div className="absolute top-0 right-0 w-40 h-40 bg-[#D4AF37]/5 rounded-full blur-3xl group-hover:bg-[#D4AF37]/10 transition-colors duration-500" />
-                  
-                  <div className="relative z-10">
-                    <div className="w-20 h-20 bg-gradient-to-br from-[#D4AF37] to-[#F4E4C1] rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg shadow-[#D4AF37]/30">
-                      <svg className="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
-                      </svg>
+                <div className="relative bg-gradient-to-br from-neutral-900/40 via-neutral-800/40 to-neutral-900/40 backdrop-blur-sm overflow-hidden rounded-[2rem] hover:shadow-2xl hover:shadow-[#D4AF37]/30 transition-all duration-500">
+                  {/* Image Container */}
+                  <div className="aspect-[3/4] overflow-hidden relative">
+                    <img
+                      src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?q=80&w=800"
+                      alt="Live Seafood"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                    
+                    {/* Floating Emoji Badge */}
+                    <div className="absolute top-6 right-6 w-14 h-14 bg-black/80 backdrop-blur-sm rounded-full flex items-center justify-center border border-[#D4AF37]/30 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                      <span className="text-2xl">🦞</span>
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Live Seafood</h3>
-                    <p className="text-neutral-400 leading-relaxed text-lg">
-                      Ensuring the freshest selections, including Mouse Grouper, Lobster, and Mud Crabs, all maintained in live tanks to preserve quality and flavor.
-                    </p>
+
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37] to-[#F4E4C1] opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
+                    
+                    {/* Content Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 p-8">
+                      <div className="w-12 h-1 bg-gradient-to-r from-[#D4AF37] to-[#F4E4C1] rounded-full mb-4 group-hover:scale-x-150 transition-transform duration-500" />
+                      <h3 className="text-3xl font-serif font-bold text-white mb-3 group-hover:text-[#D4AF37] transition-colors duration-300">
+                        Live Seafood
+                      </h3>
+                      <p className="text-white/80 leading-relaxed text-base">
+                        Ensuring the freshest selections, including Mouse Grouper, Lobster, and Mud Crabs, all maintained in live tanks to preserve quality and flavor.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Animated Bottom Border */}
+                  <div className="h-1 bg-[#D4AF37]/20 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37] to-[#F4E4C1] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-700" />
                   </div>
                 </div>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="group">
-                <div className="relative bg-gradient-to-br from-neutral-900/90 via-neutral-800/80 to-neutral-900/90 border-2 border-[#D4AF37]/20 rounded-[2rem] p-10 h-full hover:border-[#D4AF37]/60 transition-all duration-500 hover:shadow-2xl hover:shadow-[#D4AF37]/30 hover:-translate-y-3 overflow-hidden">
-                  <div className="absolute top-0 right-0 w-40 h-40 bg-[#D4AF37]/5 rounded-full blur-3xl group-hover:bg-[#D4AF37]/10 transition-colors duration-500" />
-                  
-                  <div className="relative z-10">
-                    <div className="w-20 h-20 bg-gradient-to-br from-[#D4AF37] to-[#F4E4C1] rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg shadow-[#D4AF37]/30">
-                      <svg className="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                      </svg>
+                <div className="relative bg-gradient-to-br from-neutral-900/40 via-neutral-800/40 to-neutral-900/40 backdrop-blur-sm overflow-hidden rounded-[2rem] hover:shadow-2xl hover:shadow-[#D4AF37]/30 transition-all duration-500">
+                  {/* Image Container */}
+                  <div className="aspect-[3/4] overflow-hidden relative">
+                    <img
+                      src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?q=80&w=800"
+                      alt="Artisan Dim Sum"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                    
+                    {/* Floating Emoji Badge */}
+                    <div className="absolute top-6 right-6 w-14 h-14 bg-black/80 backdrop-blur-sm rounded-full flex items-center justify-center border border-[#D4AF37]/30 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                      <span className="text-2xl">🥟</span>
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Artisan Dim Sum</h3>
-                    <p className="text-neutral-400 leading-relaxed text-lg">
-                      Freshly handcrafted daily, featuring timeless favorites such as Ha Kau, Siew Mai, and Salted Egg Yolk Buns.
-                    </p>
+
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37] to-[#F4E4C1] opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
+                    
+                    {/* Content Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 p-8">
+                      <div className="w-12 h-1 bg-gradient-to-r from-[#D4AF37] to-[#F4E4C1] rounded-full mb-4 group-hover:scale-x-150 transition-transform duration-500" />
+                      <h3 className="text-3xl font-serif font-bold text-white mb-3 group-hover:text-[#D4AF37] transition-colors duration-300">
+                        Artisan Dim Sum
+                      </h3>
+                      <p className="text-white/80 leading-relaxed text-base">
+                        Freshly handcrafted daily, featuring timeless favorites such as Ha Kau, Siew Mai, and Salted Egg Yolk Buns.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Animated Bottom Border */}
+                  <div className="h-1 bg-[#D4AF37]/20 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37] to-[#F4E4C1] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-700" />
                   </div>
                 </div>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="group">
-                <div className="relative bg-gradient-to-br from-neutral-900/90 via-neutral-800/80 to-neutral-900/90 border-2 border-[#D4AF37]/20 rounded-[2rem] p-10 h-full hover:border-[#D4AF37]/60 transition-all duration-500 hover:shadow-2xl hover:shadow-[#D4AF37]/30 hover:-translate-y-3 overflow-hidden">
-                  <div className="absolute top-0 right-0 w-40 h-40 bg-[#D4AF37]/5 rounded-full blur-3xl group-hover:bg-[#D4AF37]/10 transition-colors duration-500" />
-                  
-                  <div className="relative z-10">
-                    <div className="w-20 h-20 bg-gradient-to-br from-[#D4AF37] to-[#F4E4C1] rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg shadow-[#D4AF37]/30">
-                      <svg className="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-                      </svg>
+                <div className="relative bg-gradient-to-br from-neutral-900/40 via-neutral-800/40 to-neutral-900/40 backdrop-blur-sm overflow-hidden rounded-[2rem] hover:shadow-2xl hover:shadow-[#D4AF37]/30 transition-all duration-500">
+                  {/* Image Container */}
+                  <div className="aspect-[3/4] overflow-hidden relative">
+                    <img
+                      src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=800"
+                      alt="BBQ & Roasts"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                    
+                    {/* Floating Emoji Badge */}
+                    <div className="absolute top-6 right-6 w-14 h-14 bg-black/80 backdrop-blur-sm rounded-full flex items-center justify-center border border-[#D4AF37]/30 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                      <span className="text-2xl">🍖</span>
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">BBQ & Roasts</h3>
-                    <p className="text-neutral-400 leading-relaxed text-lg">
-                      Renowned for signature offerings including crispy Peking Duck, succulent Roast Pork Belly, and Honey Glazed Char Siew.
-                    </p>
+
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37] to-[#F4E4C1] opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
+                    
+                    {/* Content Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 p-8">
+                      <div className="w-12 h-1 bg-gradient-to-r from-[#D4AF37] to-[#F4E4C1] rounded-full mb-4 group-hover:scale-x-150 transition-transform duration-500" />
+                      <h3 className="text-3xl font-serif font-bold text-white mb-3 group-hover:text-[#D4AF37] transition-colors duration-300">
+                        BBQ & Roasts
+                      </h3>
+                      <p className="text-white/80 leading-relaxed text-base">
+                        Renowned for signature offerings including crispy Peking Duck, succulent Roast Pork Belly, and Honey Glazed Char Siew.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Animated Bottom Border */}
+                  <div className="h-1 bg-[#D4AF37]/20 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37] to-[#F4E4C1] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-700" />
                   </div>
                 </div>
               </motion.div>
