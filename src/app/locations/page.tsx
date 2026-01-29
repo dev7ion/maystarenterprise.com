@@ -1029,7 +1029,7 @@ export default function LocationsPage() {
                               <a href="https://www.instagram.com/maystarsignature" target="_blank" rel="noopener noreferrer"
                                  className="group/social flex items-center justify-center gap-2 p-3 rounded-lg bg-neutral-900/60 border border-[#D4AF37]/20 hover:border-[#D4AF37]/40 hover:bg-neutral-900/80 transition-all duration-300">
                                 <svg className="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/>
+                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                 </svg>
                                 <span className="text-xs font-medium text-white">Instagram</span>
                               </a>
@@ -1175,7 +1175,7 @@ export default function LocationsPage() {
                               <a href="https://www.instagram.com/maystarpikavenue" target="_blank" rel="noopener noreferrer"
                                  className="group/social flex items-center justify-center gap-2 p-3 rounded-lg bg-neutral-900/60 border border-[#D4AF37]/20 hover:border-[#D4AF37]/40 hover:bg-neutral-900/80 transition-all duration-300">
                                 <svg className="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/>
+                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                 </svg>
                                 <span className="text-xs font-medium text-white">Instagram</span>
                               </a>
@@ -1313,7 +1313,7 @@ export default function LocationsPage() {
                               <a href="https://www.instagram.com/maystar.mag" target="_blank" rel="noopener noreferrer"
                                  className="group/social flex items-center justify-center gap-2 p-3 rounded-lg bg-neutral-900/60 border border-[#D4AF37]/20 hover:border-[#D4AF37]/40 hover:bg-neutral-900/80 transition-all duration-300">
                                 <svg className="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/>
+                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                 </svg>
                                 <span className="text-xs font-medium text-white">Instagram</span>
                               </a>
@@ -1551,123 +1551,6 @@ export default function LocationsPage() {
                 </div>
               </motion.div>
 
-              {/* WEST JAVA & SUMATRA - Side by Side Cards */}
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* WEST JAVA */}
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
-                  className="group relative"
-                >
-                  <div className="absolute -inset-3 bg-gradient-to-br from-[#D4AF37]/15 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-700"></div>
-                  
-                  <div className="relative bg-gradient-to-br from-neutral-900/80 via-black to-neutral-900/80 rounded-2xl overflow-hidden border border-[#D4AF37]/30 group-hover:border-[#D4AF37]/50 transition-all duration-700 shadow-xl backdrop-blur-sm h-full">
-                    <div className="relative h-1.5 bg-gradient-to-r from-[#D4AF37] to-[#FFD700] overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer"></div>
-                    </div>
-
-                    <div className="p-8">
-                      <div className="flex items-center gap-4 mb-8">
-                        <div className="w-14 h-14 bg-gradient-to-br from-[#D4AF37]/25 to-[#B8860B]/15 rounded-xl flex items-center justify-center border border-[#D4AF37]/30 group-hover:scale-110 transition-transform duration-500">
-                          <svg className="w-7 h-7 text-[#FFD700]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                          </svg>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-3xl font-serif font-bold text-white mb-1 tracking-tight group-hover:text-[#FFD700] transition-colors">
-                            West Java
-                          </h3>
-                          <p className="text-xs text-[#D4AF37] uppercase tracking-[0.3em] font-semibold">West Java Region</p>
-                        </div>
-                      </div>
-                      
-                      <div className="space-y-6">
-                        <div className="relative p-6 rounded-2xl bg-gradient-to-br from-neutral-950/60 via-neutral-950/80 to-neutral-900/70 border border-white/5 transition-all duration-500">
-                          <div className="flex items-start gap-4 mb-5">
-                            <div className="flex-shrink-0 w-9 h-9 rounded-lg flex items-center justify-center border border-[#D4AF37]/30">
-                              <svg className="w-5 h-5 text-[#D4AF37]/70" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                              </svg>
-                            </div>
-                            <div className="flex-1">
-                              <h4 className="text-xl font-bold text-white mb-1 leading-tight">May Star Bandung</h4>
-                              <p className="text-sm text-neutral-400 mb-3">Nanakam Fresh Market</p>
-                              <p className="text-xs text-neutral-500 leading-relaxed">Jl. L. L. R.E. Martadinata No.20A, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115</p>
-                              <p className="text-xs text-neutral-500 font-mono mt-2">6°54'24.3"S 107°36'51.5"E</p>
-                            </div>
-                          </div>
-                          
-                          {/* Under Relocation Badge */}
-                          <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/20 border border-amber-500/30 rounded-lg mt-3">
-                            <svg className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-                            </svg>
-                            <span className="text-xs font-semibold text-amber-300 uppercase tracking-wider">Under Relocation</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-
-                {/* SUMATRA - Coming Soon */}
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
-                  className="group relative"
-                >
-                  <div className="absolute -inset-3 bg-gradient-to-br from-blue-500/15 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-700"></div>
-                  
-                  <div className="relative bg-gradient-to-br from-neutral-900/70 via-black to-neutral-900/70 rounded-2xl overflow-hidden border border-blue-400/30 group-hover:border-blue-400/50 transition-all duration-700 shadow-xl backdrop-blur-sm h-full">
-                    <div className="relative h-1.5 bg-gradient-to-r from-blue-500 to-blue-600 overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer"></div>
-                    </div>
-
-                    <div className="p-8">
-                      <div className="flex items-center gap-4 mb-8">
-                        <div className="w-14 h-14 bg-gradient-to-br from-blue-500/25 to-blue-600/15 rounded-xl flex items-center justify-center border border-blue-400/30 group-hover:scale-110 transition-transform duration-500">
-                          <svg className="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                          </svg>
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="text-3xl font-serif font-bold text-white mb-1 tracking-tight group-hover:text-blue-400 transition-colors">
-                            Sumatra
-                          </h3>
-                          <p className="text-xs text-blue-400 uppercase tracking-[0.3em] font-semibold">Sumatra Region</p>
-                        </div>
-                      </div>
-                      
-                      <div className="space-y-6">
-                        <div className="relative p-6 rounded-2xl bg-gradient-to-br from-neutral-950/60 via-neutral-950/80 to-neutral-900/70 border border-white/5 transition-all duration-500">
-                          <div className="flex items-start gap-4 mb-5">
-                            <div className="flex-shrink-0 w-9 h-9 rounded-lg flex items-center justify-center border border-blue-400/30">
-                              <svg className="w-5 h-5 text-blue-400/70" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                              </svg>
-                            </div>
-                            <div className="flex-1">
-                              <h4 className="text-xl font-bold text-white mb-1 leading-tight">May Star Batam</h4>
-                              <p className="text-sm text-neutral-400 mb-3">Location TBA</p>
-                            </div>
-                          </div>
-                          
-                          {/* Coming Soon Badge */}
-                          <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 border border-blue-400/30 rounded-lg mt-3">
-                            <svg className="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-                            </svg>
-                            <span className="text-xs font-semibold text-blue-300 uppercase tracking-wider">Coming Soon</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
-
               {/* CENTRAL JAVA & YOGYAKARTA - Premium Card */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -1747,7 +1630,7 @@ export default function LocationsPage() {
                               <a href="https://www.instagram.com/maystarjogja?igsh=c21wbnB1NzAydjU1" target="_blank" rel="noopener noreferrer"
                                  className="group/social flex items-center justify-center gap-2 p-3 rounded-lg bg-neutral-900/60 border border-[#D4AF37]/20 hover:border-[#D4AF37]/40 hover:bg-neutral-900/80 transition-all duration-300">
                                 <svg className="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/>
+                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                 </svg>
                                 <span className="text-xs font-medium text-white">Instagram</span>
                               </a>
@@ -2045,7 +1928,7 @@ export default function LocationsPage() {
                               <a href="https://www.instagram.com/maystarsurabaya?igsh=emR1Ym5pYWxrZTM5" target="_blank" rel="noopener noreferrer"
                                  className="group/social flex items-center justify-center gap-2 p-3 rounded-lg bg-neutral-900/60 border border-[#D4AF37]/20 hover:border-[#D4AF37]/40 hover:bg-neutral-900/80 transition-all duration-300">
                                 <svg className="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/>
+                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                 </svg>
                                 <span className="text-xs font-medium text-white">IG</span>
                               </a>
@@ -2191,7 +2074,7 @@ export default function LocationsPage() {
                               <a href="https://www.instagram.com/maystar.malang?igsh=azN3dDdhazdsejY3" target="_blank" rel="noopener noreferrer"
                                  className="group/social flex items-center justify-center gap-2 p-3 rounded-lg bg-neutral-900/60 border border-[#D4AF37]/20 hover:border-[#D4AF37]/40 hover:bg-neutral-900/80 transition-all duration-300">
                                 <svg className="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/>
+                                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                 </svg>
                                 <span className="text-xs font-medium text-white">Instagram</span>
                               </a>
