@@ -122,7 +122,11 @@ export default function FranchiseNetworkSection() {
         instagram: 'https://www.instagram.com/maystarsurabaya?igsh=emR1Ym5pYWxrZTM5',
         facebook: 'https://www.facebook.com/share/1VyK2PX16X/',
         maps: 'https://maps.app.goo.gl/mR6um3JPNNDpB2ED7',
-        gallery: ['/maystarsurabaya/1.jpg', '/maystarsurabaya/2.jpg', '/maystarsurabaya/3.jpg']
+        gallery: [
+          '/maystarsurabaya/WhatsApp Image 2026-01-30 at 11.08.21 AM.jpeg',
+          '/maystarsurabaya/WhatsApp Image 2026-01-30 at 11.08.21 AM (1).jpeg',
+          '/maystarsurabaya/WhatsApp Image 2026-01-30 at 11.08.21 AM (2).jpeg'
+        ]
       },
       {
         name: 'May Star Malang',

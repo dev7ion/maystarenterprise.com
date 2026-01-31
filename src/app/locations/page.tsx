@@ -19,7 +19,7 @@ export default function LocationsPage() {
   const [selectedImageMAG, setSelectedImageMAG] = useState<number | null>(null);
   const [selectedImageNAV, setSelectedImageNAV] = useState<number | null>(null);
   const [selectedImageYOG, setSelectedImageYOG] = useState<number | null>(null);
-  const [selectedImageSBY, setSelectedImageSBY] = useState<number | null>(null);
+  const [selectedImageSBY, setSelectedImageSBY] = useState<string | null>(null);
   const [selectedImageMLG, setSelectedImageMLG] = useState<number | null>(null);
 
   useEffect(() => {
@@ -31,7 +31,21 @@ export default function LocationsPage() {
   const galleryImagesMAG = [1, 2, 3, 4, 5, 6, 7];
   const galleryImagesNAV = [1, 2, 3, 4, 5, 6, 7];
   const galleryImagesYOG = [1, 2, 3, 4, 5];
-  const galleryImagesSBY = [1, 2, 3, 4];
+  const galleryImagesSBY = [
+    'WhatsApp Image 2026-01-30 at 11.08.21 AM',
+    'WhatsApp Image 2026-01-30 at 11.08.21 AM (1)',
+    'WhatsApp Image 2026-01-30 at 11.08.21 AM (2)',
+    'WhatsApp Image 2026-01-30 at 11.08.21 AM (3)',
+    'WhatsApp Image 2026-01-30 at 11.08.22 AM',
+    'WhatsApp Image 2026-01-30 at 11.08.22 AM (1)',
+    'WhatsApp Image 2026-01-30 at 11.08.22 AM (2)',
+    'WhatsApp Image 2026-01-30 at 11.08.22 AM (3)',
+    'WhatsApp Image 2026-01-30 at 11.08.22 AM (4)',
+    'WhatsApp Image 2026-01-30 at 11.08.23 AM',
+    'WhatsApp Image 2026-01-30 at 11.08.23 AM (1)',
+    'WhatsApp Image 2026-01-30 at 11.08.23 AM (2)',
+    'WhatsApp Image 2026-01-30 at 11.08.23 AM (3)'
+  ];
   const galleryImagesMLG = [1, 2, 3, 4, 5];
   const imagesPerSlide = 3;
   const totalSlides = Math.ceil(galleryImages.length / imagesPerSlide);
@@ -204,8 +218,8 @@ export default function LocationsPage() {
     setCurrentSlideSBY((prev) => (prev - 1 + totalSlidesSBY) % totalSlidesSBY);
   };
 
-  const openImageModalSBY = (imageNum: number) => {
-    setSelectedImageSBY(imageNum);
+  const openImageModalSBY = (imageFilename: string) => {
+    setSelectedImageSBY(imageFilename);
   };
 
   const closeImageModalSBY = () => {
@@ -214,13 +228,17 @@ export default function LocationsPage() {
 
   const nextImageSBY = () => {
     if (selectedImageSBY !== null) {
-      setSelectedImageSBY((prev) => (prev! < galleryImagesSBY.length ? prev! + 1 : 1));
+      const currentIndex = galleryImagesSBY.indexOf(selectedImageSBY);
+      const nextIndex = (currentIndex + 1) % galleryImagesSBY.length;
+      setSelectedImageSBY(galleryImagesSBY[nextIndex]);
     }
   };
 
   const prevImageSBY = () => {
     if (selectedImageSBY !== null) {
-      setSelectedImageSBY((prev) => (prev! > 1 ? prev! - 1 : galleryImagesSBY.length));
+      const currentIndex = galleryImagesSBY.indexOf(selectedImageSBY);
+      const prevIndex = currentIndex === 0 ? galleryImagesSBY.length - 1 : currentIndex - 1;
+      setSelectedImageSBY(galleryImagesSBY[prevIndex]);
     }
   };
 
@@ -1996,8 +2014,8 @@ export default function LocationsPage() {
                                               onClick={() => openImageModalSBY(num)}
                                             >
                                               <img
-                                                src={`/maystarsurabaya/${num}.jpg`}
-                                                alt={`May Star Surabaya - Photo ${num}`}
+                                                src={`/maystarsurabaya/${num}.jpeg`}
+                                                alt={`May Star Surabaya - ${num}`}
                                                 className="w-full h-full object-cover group-hover/img:scale-110 transition-transform duration-500"
                                               />
                                               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -2680,15 +2698,15 @@ export default function LocationsPage() {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={`/maystarsurabaya/${selectedImageSBY}.jpg`}
-              alt={`May Star Surabaya - Photo ${selectedImageSBY}`}
+              src={`/maystarsurabaya/${selectedImageSBY}.jpeg`}
+              alt={`May Star Surabaya - ${selectedImageSBY}`}
               className="max-w-[90vw] max-h-[85vh] w-auto h-auto object-contain rounded-lg"
             />
             
             {/* Image Counter */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 bg-neutral-900/90 rounded-full border border-[#D4AF37]/30">
               <span className="text-sm font-mono text-[#D4AF37]">
-                {selectedImageSBY} / {galleryImagesSBY.length}
+                {galleryImagesSBY.indexOf(selectedImageSBY) + 1} / {galleryImagesSBY.length}
               </span>
             </div>
           </div>
